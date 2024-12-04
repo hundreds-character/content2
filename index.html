@@ -1,103 +1,88 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title>Password Protected Page</title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299">
-  <style type="text/css">
-    span.s1 {font-kerning: none}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+    <style>
+        /* Initially hide the main content */
+        #content {
+            display: none;
+        }
+    </style>
 </head>
+
+
 <body>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;!DOCTYPE html&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;html lang="en"&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;head&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;title&gt;Password Protected Page&lt;/title&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;style&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>/* Initially hide the main content */</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>#content {</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">            </span>display: none;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>}</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/style&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/head&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;body&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;!-- Password form --&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div id="passwordForm"&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;h2&gt;Please enter the password to access the content:&lt;/h2&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;input type="password" id="password" placeholder="Enter Password"&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;button onclick="checkPassword()"&gt;Submit&lt;/button&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;!-- Main content (hidden initially) --&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div id="content"&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;<span class="Apple-converted-space">      </span>&lt;p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>雖然不想總是把政治掛在嘴邊，不厭其煩，但是政治影響生活是事實。內文必須要重申自己的立場。某人定位是娛樂KOL，卻總是摻和政治，給人一種不懂卻亂評價的即視感。最大的問題，就是他這種嚴重去脈絡化的論述框架，只會把台灣社會對於不同議題的討論能力矮化然後再把議題扁平化。在架空歷史和社會背景下討論一個複雜的問題，甚至用一種診斷的姿態來評論一件事，這個本身就是在不尊重社會現實而自以為是的一種傲慢。態度問題我就不說了，一直在那裡空談而不做實質的改變，無非就是為了自己頻道流量而已，承認也就好，但其人非要覺得自己是志祺77這種類型的理性聲音，我就覺得很扯。另一方面就是用評價台灣來做為他自己ego的延伸，這個我後面會提到，是一個多麼複雜的問題。</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>網絡時代背景下，他這種過度簡化的論述，和支離破碎+沒有事實和深度支撐的觀點，本來就會加迅速地傳播。對社會的影響一定是負面的，可能當下看不見，如果沒有獨立思考能力，逐漸就只會全盤接受他的觀點。結果就是一步步削弱台灣社會整體思考議題的能力，其實這才是令人所擔心的事情。OO的強勢所帶來的不是一種良性的反思，而是開始讓當下年輕群體對自己所處的社會體驗產生一種負面和消極的解讀，這種負面只是流於一種抱怨和盲目地否定台灣本土的事務，在罔顧台灣社會原有的現實基礎下批判，根本就不是他口中理性的體現。結果固然就是讓大量人（主要是還沒有思考能力、總是跟風的年輕人）拋棄對本土事物最原始的觸覺和判斷，失去對文化產生有意義的連結、否定自己居住體驗的微妙和複雜性，更不要說認同感和文化身份的建立了。其結果只是變成一種粗暴簡單化的結論。再延伸到不相信自己對台灣生活體驗的一些判斷，反而相信和接受一個中國網紅粗暴解讀台灣的觀點和架構，無形中肢解台灣文化的過程讓我覺得似曾相識。無形之中掏空台灣社會（主要針對年輕一代人）的主體性，這個結果是很危險而且是可預見的。當台灣或其他社會中的本土文化沒有足夠強大的內在韌性時，外部聲音、不論是來自中國的「文化滲透」，還是來自西方的價值觀輸入，都可能導致社會個體對自我文化的疏離和拒絕。</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>他初到台灣時候，已經有很多人解釋過台灣問題的複雜性和一些歷史淵源。譬如黑道情況，不僅僅是治安方面，也是一種地方文化協商的一個折衷的結果。並非簡單說“廢除”兩個字就能做到的，當中後續的利益和對於社會長遠的影響，某某人根本不曾有考慮過。如果真的採納他的建議，利益平衡如何處理？台灣黑道問題一定會變得更好嗎？不一定。但是某某人的態度，就仿佛對這種社會現實視若無睹，一味地對這些事物嫉惡如仇地批判。這種厭惡我隱隱覺得並不是出自於對社會效益的一種考量，更多的只是對於台灣本土文化所衍生出來的問題的一些鄙視和傲慢。僅以道德高地做出斷定，無視社會議題的複雜性，總是試圖將其個人批判角度向「西化」的基礎上靠攏，故意地輸出這股力量，這種行徑讓我極度反感。</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>我和OO確實乍看表面上有著某種相似，的確。但我和OO的價值觀終究是完全不一樣的。其實，我們的相似之處主要體現在現實層面的文化適應策略上（例如中英夾雜），在語言習慣上也有不少重疊。我母親是中國人，我可以說接近官話的標準普通話，但另一方面，我接受了較多的西方教育，因此英語水平較好是事實。但隨著了解越深，我發現我與OO始終是兩個不同的人。這種感覺難以描述，像是一種錯位和過濾過的關係。這種混亂感，現在只能通過與他的對罵來解決。只有在對罵的過程中，我才能從OO的“白人”形象中找出漏洞，並且從他的潛意識反應中了解他的真正性格和立場。</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>西方學術界對後殖民影響的討論，已經進入了對被殖民社會負面影響的反思。以傳教為例（雖然我並非教徒），現代的教會在傳教方式上已經改變，不再像七八十年代那樣，而是借鑑人類學研究，試圖在文化交流中處理不同文化所帶來的問題。期望在尊重和包容中建立對話，增強文化敏感度。然而，OO這樣的自認為西方化的人，卻對台灣社會的整體脈絡視而不見，甚至利用西方文化的優越性來作為論述工具。他經常東拼西湊各種資料，例如用reddit來佐證觀點，卻未曾意識到reddit在很多西方人眼中只是一個同溫層，根本不具代表性。OO對西方的理解存在嚴重誤解，西方文化對他來說，無非是提供一種自我提升的工具、說到底無非就是他一個方便的ego boost而已。所以我作為一個在外國讀過4年書的人是不願與他為伍的（我不能說自己很了解西方文化，但OO一定是偽白人、真中國人，），必須劃清界線。</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>我在網絡上反駁OO的言論，無疑帶有強烈情緒，這是網絡文化中的一種適應策略。當然，我也承認自己曾經草率地判斷過，曾經以為我和OO是相似的人。認識他的過程中，我不小心助長了他的勢力，結果讓他肆無忌憚地發聲，這是我現在無法忽視的事實，我深感後悔。但也只能無奈接受結果。</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>至於OO和“支那”的關係，如我所說，十分微妙。儘管他口口聲聲強調要執行獨立思考，這些話聽上去當然是對的道理，但他的行為卻完全背道而馳。OO希望台灣社會西方化，變成他理想中的台灣，殊不知他一方面自己卻是支那文化的傳播者，面對質疑和批評時候那種唯我獨尊的態度、不尊重他人論述空間、辯論只是為了“贏”別人、用兇惡的姿態去面對反駁自己的人、對於立場極度固執（因為輸不起），其次是B站的直播風格，以低俗和無下限做為賣點（抖音），我完全看不到這個人和我認識的“獨立思考”有什麼相似之處。這與他自詡為西方文化優良部份做為代言人的立場相悖。事實上，他的粉完全是一堆盲目追隨和跪舔他的人，這在我看來確實十分滑稽。這和他想把自己變成中文圈裡的西方文化符號，想成為一股清泉，以這種姿態來吸粉和營銷自己的人設是背道而馳的。雖然他意識裡是總覺得自己就是白人，但是他身上的中國痕跡有多重我也不必多述，即便他長相和身形都是是歐洲人的架，只要他一張嘴說話，在不少台派眼中，依舊一眼秒變回“中國人”。這些行為讓他的“白人”形象逐漸破綻。我不能接受的，是有一個想OO這樣洋垃圾的人來代表西方文化，我作為一個在外國讀了4年書，在加拿大住了8年的人覺得這是對西方文化的一種侮辱和誤讀。所以我死都必須要繼續嘴他。</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>不管怎麼說，我無法接受對台灣社會問題的簡單化解讀，無論是從殖民化角色的立場（硬生生地套西方價值觀）出發，還是來自牆國文化的立場（那種不期然地散發著，每分每秒都散發著，尤其是當他不意識的時候）），這種行為讓我無法接受。即便我知道我一個人的聲音無法改變什麼，但我無法視而不見。我現在只希望OO繼續自我暴露。只要他說得越多，一旦談起嚴肅話題，就越會暴露他自己自相矛盾的地方，那種所謂獨立思卡能力就會不攻自破，他的“白人”的人設就會開始掉漆，原形畢露。他的形象需要崩塌一次，他才能看清楚自己是誰。</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>借鑑香港的經驗而言，當一個社會的本土文化薄弱而後殖問題又未解決的時候，它注定無法在一個有效的框架下運作以及解決迎面而來的問題。面對複雜的地緣政治現實和背景，沒有主流的共識帶領人們走出困局的時候，結果就是造成不可調和的矛盾直到撕裂的局面，一次次輿論戰之中被分化和削弱。不成氣候、繼而被毗鄰覬覦的國家所完全制服。雖然現在所看到的不是完全一樣的條件，但這種大國影響小國，削弱地方主體性和破壞其平衡一直是歷史上不停上演的局面，似曾相識一樣在我眼前延展開來，因此我做不到無視它的存在。OO的這種接近於分化的台灣行為，用其情緒化+兇惡的方式批鬥台灣一切事物的作風，包括宮廟、身心靈、黑道文化等，已經引來了很多“紅衛兵”一類聲音的贊同，他的粉絲群對台灣已經是危害至極。而且他沒有要停的意思。他的存在，和他的粉絲的存在是互為因果的，沒有OO的紅衛兵，就不會有OO這個人存在，這種文化的影響力，這種看似無害，但OO這種娛樂至死，空洞無物的論點，只讓一邊進可攻、退可守，巧妙地讓他自己立於不敗之地，這種形式才是暗藏危險，讓人防不勝防。當然，到最後的結局往往是人們危言聳聽，到最後釀成某種定局，也就不得不接受這種文化所悄聲帶來的結果。 &lt;/p&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;script&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>// This function checks if the entered password is correct</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>function checkPassword() {</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">            </span>var password = document.getElementById("password").value;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">            </span>var correctPassword = "kagaya";<span class="Apple-converted-space">  </span>// Replace with your desired password</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">            </span>if (password === correctPassword) {</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">                </span>// Hide the password form</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">                </span>document.getElementById("passwordForm").style.display = "none";</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b><span class="Apple-converted-space">                </span></b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">                </span>// Show the main content</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">                </span>document.getElementById("content").style.display = "block";</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b><span class="Apple-converted-space">                </span></b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">                </span>// Optional: redirect to another page after successful login</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">                </span>// window.location.href = "https://www.example.com";<span class="Apple-converted-space">  </span>// Uncomment this line if you want a redirect</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">            </span>} else {</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">                </span>alert("Incorrect password. Please try again.");</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">            </span>}</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>}</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/script&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/body&gt;</b></span></h2>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/html&gt;<span class="Apple-converted-space"> </span></b></span></h2>
+    <!-- Password form -->
+    <div id="passwordForm">
+        <h2>Please enter the password to access the content:</h2>
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+
+    <!-- Main content (hidden initially) -->
+    <div id="content">
+       <p>
+          雖然不想總是把政治掛在嘴邊，不厭其煩，但是政治影響生活是事實。內文必須要重申自己的立場。某人定位是娛樂KOL，卻總是摻和政治，給人一種不懂卻亂評價的即視感。最大的問題，就是他這種嚴重去脈絡化的論述框架，只會把台灣社會對於不同議題的討論能力矮化然後再把議題扁平化。在架空歷史和社會背景下討論一個複雜的問題，甚至用一種診斷的姿態來評論一件事，這個本身就是在不尊重社會現實而自以為是的一種傲慢。態度問題我就不說了，一直在那裡空談而不做實質的改變，無非就是為了自己頻道流量而已，承認也就好，但其人非要覺得自己是志祺77這種類型的理性聲音，我就覺得很扯。另一方面就是用評價台灣來做為他自己ego的延伸，這個我後面會提到，是一個多麼複雜的問題。
+</p>
+
+  <p>
+網絡時代背景下，他這種過度簡化的論述，和支離破碎+沒有事實和深度支撐的觀點，本來就會加迅速地傳播。對社會的影響一定是負面的，可能當下看不見，如果沒有獨立思考能力，逐漸就只會全盤接受他的觀點。結果就是一步步削弱台灣社會整體思考議題的能力，其實這才是令人所擔心的事情。OO的強勢所帶來的不是一種良性的反思，而是開始讓當下年輕群體對自己所處的社會體驗產生一種負面和消極的解讀，這種負面只是流於一種抱怨和盲目地否定台灣本土的事務，在罔顧台灣社會原有的現實基礎下批判，根本就不是他口中理性的體現。結果固然就是讓大量人（主要是還沒有思考能力、總是跟風的年輕人）拋棄對本土事物最原始的觸覺和判斷，失去對文化產生有意義的連結、否定自己居住體驗的微妙和複雜性，更不要說認同感和文化身份的建立了。其結果只是變成一種粗暴簡單化的結論。再延伸到不相信自己對台灣生活體驗的一些判斷，反而相信和接受一個中國網紅粗暴解讀台灣的觀點和架構，無形中肢解台灣文化的過程讓我覺得似曾相識。無形之中掏空台灣社會（主要針對年輕一代人）的主體性，這個結果是很危險而且是可預見的。當台灣或其他社會中的本土文化沒有足夠強大的內在韌性時，外部聲音、不論是來自中國的「文化滲透」，還是來自西方的價值觀輸入，都可能導致社會個體對自我文化的疏離和拒絕。
+</p>
+
+  <p>
+他初到台灣時候，已經有很多人解釋過台灣問題的複雜性和一些歷史淵源。譬如黑道情況，不僅僅是治安方面，也是一種地方文化協商的一個折衷的結果。並非簡單說“廢除”兩個字就能做到的，當中後續的利益和對於社會長遠的影響，某某人根本不曾有考慮過。如果真的採納他的建議，利益平衡如何處理？台灣黑道問題一定會變得更好嗎？不一定。但是某某人的態度，就仿佛對這種社會現實視若無睹，一味地對這些事物嫉惡如仇地批判。這種厭惡我隱隱覺得並不是出自於對社會效益的一種考量，更多的只是對於台灣本土文化所衍生出來的問題的一些鄙視和傲慢。僅以道德高地做出斷定，無視社會議題的複雜性，總是試圖將其個人批判角度向「西化」的基礎上靠攏，故意地輸出這股力量，這種行徑讓我極度反感。
+</p>
+
+  <p>
+我和OO確實乍看表面上有著某種相似，的確。但我和OO的價值觀終究是完全不一樣的。其實，我們的相似之處主要體現在現實層面的文化適應策略上（例如中英夾雜），在語言習慣上也有不少重疊。我母親是中國人，我可以說接近官話的標準普通話，但另一方面，我接受了較多的西方教育，因此英語水平較好是事實。但隨著了解越深，我發現我與OO始終是兩個不同的人。這種感覺難以描述，像是一種錯位和過濾過的關係。這種混亂感，現在只能通過與他的對罵來解決。只有在對罵的過程中，我才能從OO的“白人”形象中找出漏洞，並且從他的潛意識反應中了解他的真正性格和立場。
+</p>
+
+  <p>
+
+西方學術界對後殖民影響的討論，已經進入了對被殖民社會負面影響的反思。以傳教為例（雖然我並非教徒），現代的教會在傳教方式上已經改變，不再像七八十年代那樣，而是借鑑人類學研究，試圖在文化交流中處理不同文化所帶來的問題。期望在尊重和包容中建立對話，增強文化敏感度。然而，OO這樣的自認為西方化的人，卻對台灣社會的整體脈絡視而不見，甚至利用西方文化的優越性來作為論述工具。他經常東拼西湊各種資料，例如用reddit來佐證觀點，卻未曾意識到reddit在很多西方人眼中只是一個同溫層，根本不具代表性。OO對西方的理解存在嚴重誤解，西方文化對他來說，無非是提供一種自我提升的工具、說到底無非就是他一個方便的ego boost而已。所以我作為一個在外國讀過4年書的人是不願與他為伍的（我不能說自己很了解西方文化，但OO一定是偽白人、真中國人，），必須劃清界線。
+
+</p>
+
+  <p>
+我在網絡上反駁OO的言論，無疑帶有強烈情緒，這是網絡文化中的一種適應策略。當然，我也承認自己曾經草率地判斷過，曾經以為我和OO是相似的人。認識他的過程中，我不小心助長了他的勢力，結果讓他肆無忌憚地發聲，這是我現在無法忽視的事實，我深感後悔。但也只能無奈接受結果。
+</p>
+
+  <p>
+
+至於OO和“支那”的關係，如我所說，十分微妙。儘管他口口聲聲強調要執行獨立思考，這些話聽上去當然是對的道理，但他的行為卻完全背道而馳。OO希望台灣社會西方化，變成他理想中的台灣，殊不知他一方面自己卻是支那文化的傳播者，面對質疑和批評時候那種唯我獨尊的態度、不尊重他人論述空間、辯論只是為了“贏”別人、用兇惡的姿態去面對反駁自己的人、對於立場極度固執（因為輸不起），其次是B站的直播風格，以低俗和無下限做為賣點（抖音），我完全看不到這個人和我認識的“獨立思考”有什麼相似之處。這與他自詡為西方文化優良部份做為代言人的立場相悖。事實上，他的粉完全是一堆盲目追隨和跪舔他的人，這在我看來確實十分滑稽。這和他想把自己變成中文圈裡的西方文化符號，想成為一股清泉，以這種姿態來吸粉和營銷自己的人設是背道而馳的。雖然他意識裡是總覺得自己就是白人，但是他身上的中國痕跡有多重我也不必多述，即便他長相和身形都是是歐洲人的架，只要他一張嘴說話，在不少台派眼中，依舊一眼秒變回“中國人”。這些行為讓他的“白人”形象逐漸破綻。我不能接受的，是有一個想OO這樣洋垃圾的人來代表西方文化，我作為一個在外國讀了4年書，在加拿大住了8年的人覺得這是對西方文化的一種侮辱和誤讀。所以我死都必須要繼續嘴他。
+
+</p>
+
+  <p>
+
+不管怎麼說，我無法接受對台灣社會問題的簡單化解讀，無論是從殖民化角色的立場（硬生生地套西方價值觀）出發，還是來自牆國文化的立場（那種不期然地散發著，每分每秒都散發著，尤其是當他不意識的時候）），這種行為讓我無法接受。即便我知道我一個人的聲音無法改變什麼，但我無法視而不見。我現在只希望OO繼續自我暴露。只要他說得越多，一旦談起嚴肅話題，就越會暴露他自己自相矛盾的地方，那種所謂獨立思卡能力就會不攻自破，他的“白人”的人設就會開始掉漆，原形畢露。他的形象需要崩塌一次，他才能看清楚自己是誰。
+</p>
+
+  <p>
+借鑑香港的經驗而言，當一個社會的本土文化薄弱而後殖問題又未解決的時候，它注定無法在一個有效的框架下運作以及解決迎面而來的問題。面對複雜的地緣政治現實和背景，沒有主流的共識帶領人們走出困局的時候，結果就是造成不可調和的矛盾直到撕裂的局面，一次次輿論戰之中被分化和削弱。不成氣候、繼而被毗鄰覬覦的國家所完全制服。雖然現在所看到的不是完全一樣的條件，但這種大國影響小國，削弱地方主體性和破壞其平衡一直是歷史上不停上演的局面，似曾相識一樣在我眼前延展開來，因此我做不到無視它的存在。OO的這種接近於分化的台灣行為，用其情緒化+兇惡的方式批鬥台灣一切事物的作風，包括宮廟、身心靈、黑道文化等，已經引來了很多“紅衛兵”一類聲音的贊同，他的粉絲群對台灣已經是危害至極。而且他沒有要停的意思。他的存在，和他的粉絲的存在是互為因果的，沒有OO的紅衛兵，就不會有OO這個人存在，這種文化的影響力，這種看似無害，但OO這種娛樂至死，空洞無物的論點，只讓一邊進可攻、退可守，巧妙地讓他自己立於不敗之地，這種形式才是暗藏危險，讓人防不勝防。當然，到最後的結局往往是人們危言聳聽，到最後釀成某種定局，也就不得不接受這種文化所悄聲帶來的結果。 </p>
+    </div>
+
+    <script>
+        // This function checks if the entered password is correct
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            var correctPassword = "kagaya";  // Replace with your desired password
+
+            if (password === correctPassword) {
+                // Hide the password form
+                document.getElementById("passwordForm").style.display = "none";
+                
+                // Show the main content
+                document.getElementById("content").style.display = "block";
+                
+                // Optional: redirect to another page after successful login
+                // window.location.href = "https://www.example.com";  // Uncomment this line if you want a redirect
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
 </body>
-</html>
+</html> 
